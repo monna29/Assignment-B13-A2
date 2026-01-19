@@ -16,7 +16,7 @@ body {
 }
 
 
-/* header style */
+/* header nav style */
 nav {
     display: flex;
     justify-content: space-between;
@@ -65,11 +65,107 @@ nav ul {
     display: none;
 }
 
+/* header-container-style */
+.header-container {
+    background-image: url(assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.header-cont {
+    margin: 100px auto;
+
+}
+
+.header-content {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.header-logo-bg {}
+
+.header-mic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-new {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: #00FF88;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+
+
+}
+
+.header-titel {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.tech-btn-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.tech-listen-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: linear-gradient(to right top, #F7E93F, #FB09B4, #9100F8);
+    cursor: pointer;
+}
+
+.tech-sub-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    display: flex;
+    gap: 8px;
+    border-radius: 40px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
     nav {
-       width: 92%;
-        
+        width: 92%;
+
     }
 
     .nav-hamburger {
@@ -82,5 +178,42 @@ nav ul {
 
     .nav-btn {
         display: none;
+    }
+
+    /* header style */
+    .header-container {
+        width: 100%;
+        /* max-width: 576px; */
+        height: 466px;
+    }
+
+    .header-mic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-content {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-logo-bg img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-new {
+        font-size: 16px;
+        top: 2px;
+        right: 2px;
+    }
+
+    .header-titel {
+        margin-top: 24px;
+        font-size: 40px;
+    }
+
+    .header-cont {
+        margin: 40px 10px;
     }
 }
