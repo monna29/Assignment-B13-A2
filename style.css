@@ -215,9 +215,10 @@ nav ul {
 }
 
 /* choose section style */
-.choose-section{
+.choose-section {
     margin: 120px auto;
 }
+
 .choose-title {
     font-size: 48px;
     font-weight: 700;
@@ -241,31 +242,33 @@ nav ul {
     border-radius: 40px;
     padding: 40px;
 }
-#sideber img{
+
+#sideber img {
     margin-top: 108px;
 }
+
 #sideber {
     grid-row: span 2;
-    
+
 }
 
 #side-colum {
-    
+
     grid-column: span 2;
-    
+
 }
 
 #side-colum2 {
-    
+
     grid-column: span 2;
-    
+
 
 }
 
 #side-colum3 {
-    
+
     grid-column: span 2;
-   
+
 
 }
 
@@ -283,6 +286,64 @@ nav ul {
 
 .choose-card {
     grid-row: span 2;
+}
+
+/* Featured Episodes style */
+.episode-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+
+}
+
+.my-iframe {
+    border-radius: 24px 24px 0 0;
+}
+
+.episode-card {
+    background-color: #250D44;
+    /* width: 380px; */
+    border-radius: 24px;
+
+}
+
+.episode-card-content {
+    padding: 24px;
+}
+
+.episode-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.episode-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 24px;
+}
+
+.episode-card-description {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.episode-time-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.episode-time {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00FF88;
 }
 
 /* responsive style */
@@ -367,12 +428,37 @@ nav ul {
         margin-bottom: 80px;
         margin-top: 10px;
     }
+
     /* choose section */
-    .choose-container{
+    .choose-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    
-    .choose-title{
+
+    .choose-title {
         font-size: 32px;
+    }
+
+    /* episode section style */
+    .episode-section {
+        /* display: none; */
+    }
+
+    .episode-container {
+        flex-direction: column;
+        width: 92%;
+    }
+
+    .episode-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .episode-card-title {
+        font-size: 18px;
+        margin-top: 14px;
+    }
+
+    .episode-card-content {
+        padding: 14px;
     }
 }
