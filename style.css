@@ -190,14 +190,13 @@ nav ul {
     color: white;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .about-rating {
     display: flex;
     gap: 80px;
     justify-content: center;
-
 }
 
 .rating-titel {
@@ -213,6 +212,77 @@ nav ul {
     color: white;
     margin-top: 16px;
     text-align: center;
+}
+
+/* choose section style */
+.choose-section{
+    margin: 120px auto;
+}
+.choose-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.choose-container {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #35116566;
+    border-radius: 40px;
+    padding: 40px;
+}
+#sideber img{
+    margin-top: 108px;
+}
+#sideber {
+    grid-row: span 2;
+    
+}
+
+#side-colum {
+    
+    grid-column: span 2;
+    
+}
+
+#side-colum2 {
+    
+    grid-column: span 2;
+    
+
+}
+
+#side-colum3 {
+    
+    grid-column: span 2;
+   
+
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.choose-card {
+    grid-row: span 2;
 }
 
 /* responsive style */
@@ -270,21 +340,39 @@ nav ul {
     .header-cont {
         margin: 40px 10px;
     }
+
     /* about section style */
-    .about-section{
+    .about-section {
         margin: 40px auto;
     }
-    .about-rating{
+
+    .about-rating {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
-    .about-header{
+
+    .about-header {
         font-size: 36px;
     }
-    .about-description br{
+
+    .about-description br {
         display: none;
     }
-    .about-header{
+
+    .about-header {
         margin-top: 0;
+    }
+
+    .about-end {
+        margin-bottom: 80px;
+        margin-top: 10px;
+    }
+    /* choose section */
+    .choose-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .choose-title{
+        font-size: 32px;
     }
 }
