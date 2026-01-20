@@ -346,6 +346,65 @@ nav ul {
     color: #00FF88;
 }
 
+/* Meet the Host section style */
+.meet-section {
+    margin: 120px auto;
+}
+
+.meet-container {
+    margin: 0 auto;
+    width: 75%;
+    background-color: #35116566;
+    border-radius: 40px;
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+
+}
+
+.meet-section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.host-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.host-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.host-social-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.host-social-icon div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    position: relative;
+}
+
+.host-social-icon div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
     nav {
@@ -460,5 +519,30 @@ nav ul {
 
     .episode-card-content {
         padding: 14px;
+    }
+    /* meet section style */
+    .meet-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 16px;
+    }
+    .meet-container-photo{
+        width: 150px;
+        height: 150px;
+    }
+    .meet-section-title{
+        font-size: 30px;
+    }
+    .host-name {
+        text-align: center;
+        font-size: 22px;
+    }
+    .host-description{
+        text-align: center;
+    }
+    .host-social-icon{
+        width:50%;
+       margin: 0 auto;
     }
 }
